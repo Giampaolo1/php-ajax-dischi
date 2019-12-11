@@ -5,16 +5,17 @@ body {
 .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .container img {
-  width: 80%;
+  width: 100%;
 }
 
 .img {
   display: flex;
   justify-content: center;
+  margin: 20px;
 }
 
 .album {
@@ -22,6 +23,7 @@ body {
   width: 200px;
   height: 350px;
   background-color: black;
+  margin: 35px;
 }
 
 .testo {
