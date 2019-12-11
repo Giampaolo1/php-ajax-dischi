@@ -35,6 +35,7 @@ album per artista -->
   </head>
   <body>
     <div class="container">
+
       <?php
         foreach ($database as $album) { ?>
         <div class="album">
@@ -43,18 +44,18 @@ album per artista -->
           </div>
           <div class="testo">
             <h3>
-            <?php echo $album["title"];?>
+              <?php echo $album["title"];?>
             </h3>
             <h4>
-            <?php echo $album["author"];?>
+              <?php echo $album["author"];?>
             </h4>
             <h5>
-            <?php echo $album["year"];?>
+              <?php echo $album["year"];?>
             </h5>
           </div>
         </div>
       <?php } ?>
-
+      
     </div>
   </body>
 </html>
