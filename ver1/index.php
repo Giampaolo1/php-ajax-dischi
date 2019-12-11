@@ -34,26 +34,27 @@ album per artista -->
 
   </head>
   <body>
-    <?php
+    <div class="container">
+      <?php
         foreach ($database as $album) { ?>
-      <h2>
-        <?php echo $album["title"];?>
-      </h2>
-      <h3>
-        <?php echo $album["author"];?>
-      </h3>
-      <h3>
-        <?php echo $album["year"];?>
-      </h3>
-      <div>
-        <img src=<?php echo $album["poster"];?>>
-        <?php echo "<br>";?>
-        <?php echo "<br>";?>
-        <?php echo "-------------";;?>
-      </div>
-    <?php } ?>
+        <div class="album">
+          <div class="img">
+            <img src=<?php echo $album["poster"];?>>
+          </div>
+          <div class="testo">
+            <h3>
+            <?php echo $album["title"];?>
+            </h3>
+            <h4>
+            <?php echo $album["author"];?>
+            </h4>
+            <h5>
+            <?php echo $album["year"];?>
+            </h5>
+          </div>
+        </div>
+      <?php } ?>
 
-    <img src="">
-
+    </div>
   </body>
 </html>
