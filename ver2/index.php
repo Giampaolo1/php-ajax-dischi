@@ -24,6 +24,8 @@ album per artista -->
   <head>
     <meta charset="utf-8">
 
+    <link rel="stylesheet" href="style.css">
+
     <!-- JS: JQUERY -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- JS: HANDLEBARS -->
@@ -32,18 +34,18 @@ album per artista -->
     <!-- TEMPLATE: MESSAGE MENU -->
     <script id="template" type="text/x-handlebars-template">
       <div class="album">
-        <p>{{title}}: {{}}</p>
-        <p>{{author}}: {{}}</p>
-        <p>{{year}}:</p>
-        <p>{{poster}}:</p>
+        <div class="img">
+          <img src="{{poster}}">
+        </div>
+        <div class="testo">
+          <h3>{{title}}</h3>
+          <h4>{{author}}</h3>
+          <h5>{{year}}</h3>
+        </div>
       </div>
     </script>
 
     <title>JP php-ajax Dischi 2</title>
-
-    <?php
-      include "data.php";
-    ?>
 
   </head>
   <body>

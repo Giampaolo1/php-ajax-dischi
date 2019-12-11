@@ -1,0 +1,39 @@
+body {
+  background: grey;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.container img {
+  width: 80%;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+}
+
+.album {
+  margin: 20px;
+  width: 200px;
+  height: 350px;
+  background-color: black;
+}
+
+.testo {
+  text-align: center;
+}
+
+h3 {
+  color: white;
+}
+h4 {
+  color: grey;
+}
+h5 {
+  color: lightgrey;
+}

@@ -23,6 +23,9 @@ album per artista -->
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+
+    <link rel="stylesheet" href="style.css">
+
     <title>JP php-ajax Dischi 1</title>
 
     <?php

@@ -1,22 +1,22 @@
-function printData(data) {
-  // data sono i dati in php
+function printData(database) {
+  
   var target = $(".container");
   var template = $("#template").html();
   var compiled = Handlebars.compile(template);
 
   for (var i=0;i<database.length;i++) {
-    var match = database[i];
-    
-    var compiledMatch = compiled(match);
-    target.append(compiledMatch);
+    var album = database[i];
+
+    var compiledAlbum = compiled(album);
+    target.append(compiledAlbum);
   }
 }
 function getData() {
   $.ajax({
     url: "data.php",
     method: "GET",
-    success: function(data) {
-        printData(data);
+    success: function(prendiIdati) {
+        printData(prendiIdati);
     },
     error: function(error) {
       console.log("error", error);
